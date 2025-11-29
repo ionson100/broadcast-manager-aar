@@ -35,9 +35,11 @@ public class BroadcastManager {
     public static void add(Context context, String filter, IActionReceiver<String> action){
 
         for (InnerWrapper innerWrapper : innerWrappers) {
-            if(innerWrapper.filter.equals(filter))
+            if(innerWrapper.filter.equals(filter)){
                 Log.e("BroadcastManager","Filter "+filter+", already used earlier during registration");
-            return;
+                return;
+            }
+
         }
 
 
@@ -77,8 +79,10 @@ public class BroadcastManager {
     public static <T extends Parcelable> void addParcelable(Context context, String filter, IActionReceiver<T> action){
 
         for (InnerWrapper innerWrapper : innerWrappers) {
-            if(innerWrapper.filter.equals(filter))
+            if(innerWrapper.filter.equals(filter)){
+                Log.e("BroadcastManager","Filter "+filter+", already used earlier during registration");
                 return;
+            }
         }
 
         InnerWrapper innerWrapper=new InnerWrapper();
