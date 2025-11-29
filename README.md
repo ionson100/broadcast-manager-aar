@@ -1,6 +1,6 @@
 
 [![](https://jitpack.io/v/ionson100/broadcast-manager-aar.svg)](https://jitpack.io/#ionson100/broadcast-manager-aar)
-A library for creating an array of listeners (BroadcastReceiver) based on a filter.
+##### A library for creating an array of listeners (BroadcastReceiver) based on a filter.
 compileSdk = 36 minSdk = 24.
 It has only five static methods.
 ##### Register a listener that will receive a string.
