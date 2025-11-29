@@ -1,3 +1,5 @@
+
+[![](https://jitpack.io/v/ionson100/broadcast-manager-aar.svg)](https://jitpack.io/#ionson100/broadcast-manager-aar)
 A library for creating an array of listeners (BroadcastReceiver) based on a filter.
 compileSdk = 36 minSdk = 24.
 It has only five static methods.
@@ -46,5 +48,21 @@ BroadcastManager.dispose(this);
 }
 ```
 If you specify a previously registered filter during registration, registration will fail.
+
+##### install
+```markdown
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url = uri("https://jitpack.io") }
+		}
+	}
+```
+```markdown
+dependencies {
+       implementation("com.github.ionson100:broadcast-manager-aar:v1.0.2")
+}
+```
 
        
