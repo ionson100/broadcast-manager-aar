@@ -61,6 +61,7 @@ dependencyResolutionManagement {
 ```
 ```markdown
 dependencies {
+
        implementation("com.github.ionson100:broadcast-manager-aar:v1.0.4")
 }
 ```
