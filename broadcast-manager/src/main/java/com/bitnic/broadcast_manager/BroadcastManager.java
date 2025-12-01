@@ -60,9 +60,9 @@ public class BroadcastManager {
         IntentFilter filterCommonMessage = new IntentFilter();
         filterCommonMessage.addAction(filter);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+
                 context.registerReceiver(innerWrapper.receiver,filterCommonMessage,RECEIVER_EXPORTED);
-            }
+
         }else{
             context.registerReceiver(innerWrapper.receiver,filterCommonMessage);
         }
@@ -105,9 +105,9 @@ public class BroadcastManager {
 //LocalBroadcastManager.getInstance(context).registerReceiver(innerWrapper.receiver,filterCommonMessage);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+
                 context.registerReceiver(innerWrapper.receiver,filterCommonMessage,RECEIVER_EXPORTED);
-            }
+
 
         }else{
             context.registerReceiver(innerWrapper.receiver,filterCommonMessage);

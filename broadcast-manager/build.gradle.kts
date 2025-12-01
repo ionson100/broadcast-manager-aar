@@ -88,7 +88,7 @@ publishing {
 
             groupId = "com.github.ionson100" // 👈 твой GitHub username
             artifactId = "bitnicbroadcastmanager"          // 👈 имя библиотеки
-            version = "1.0.3"                  // 👈 версия тега
+            version = "1.0.4"                  // 👈 версия тега
         }
     }
 }
